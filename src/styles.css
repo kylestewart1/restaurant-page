@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    background-color: aqua;
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 1fr;
+    row-gap: 20px;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    display: grid;
+    justify-items: center;
+    align-self: center;
+    width: 100%;
+    height: 50px;
+    background-color: lightsalmon;
+}
+
+nav {
+    width: 40%;
+    height: 95%;
+    align-self: end;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: end;
+}
+
+button {
+    width: 70px;
+    height: 40px;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid black;
+    border-bottom: none;
+    background-color: lightsalmon;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.current-tab {
+    background-color: salmon;
+}
+
+#content {
+    margin-top: 50px;
+    width: 50%;
+    padding: 50px;
+    background-color: brown;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+}
+
+h1 {
+    text-align: center;
+    height: 50px;
+    width: 400px;
+    background-color: salmon;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container, .menu-item-container {
+    width: 400px;
+    min-height: 100px;
+    border-radius: 20px;
+    background-color: grey;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+
+.container > p, .menu-item, .contacts {
+    width: 380px;
+    height: 90%;
+    border-radius: 20px;
+    background-color: salmon;
+}
+
+.container p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    text-align: center;
+}
+
+
+
+.menu-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    align-items: center;
+}
+
+.contacts {
+    grid-template-rows: 1fr 1fr;
+}
